@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_app/pages/about.dart';
+import 'package:flutter_app/pages/settings.dart';
 import 'pages/home.dart';
 
 
@@ -7,7 +9,9 @@ void main() => runApp(ComprasApp());
 class ComprasApp extends StatelessWidget{
 
 final routes = <String, WidgetBuilder> {
-  HomePage.tag: (context) => HomePage()
+  HomePage.tag: (context) => HomePage(),
+  AboutPage.tag: (context) => AboutPage(),
+  Settings.tag: (contex) => Settings(),
 };
 //teste
 @override
