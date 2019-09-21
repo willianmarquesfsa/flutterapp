@@ -16,9 +16,32 @@ class Layout {
 static Scaffold getContent(BuildContext context, content) {
 
 return Scaffold(appBar:AppBar(
+                       actions: <Widget>[GestureDetector(onTap: () {
+                                                                showDialog(
+                                                                context: context,
+                                                                barrierDismissible: false,
+                                                                builder: (BuildContext ctx) {
+                                                                  return AlertDialog(title: Text("Nome da sua lista"),
+                                                                 actions: <Widget>[RaisedButton(child: Text('ok'),
+                                                                                   onPressed:() {
+                                                                                   Navigator.of(ctx).pop();
+                                                                 },
+                                                                 )
+                                                                 
+                                                                 ],
+                                                                 );
+                       
+                                                                },
+                                                                
+                                                                );
+                                                                },
+                                                                ),
+                                         Padding(padding: EdgeInsets.only(right: 30)), 
+                                         ],
                        backgroundColor: Color.fromRGBO(150, 150, 150, 1), 
                        title: Center(child: Text("Conograma"),
                        ),
+                       
                        ),
                 
                 bottomNavigationBar: BottomNavigationBar(
