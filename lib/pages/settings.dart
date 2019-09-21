@@ -3,8 +3,8 @@ import 'package:flutter_app/layout.dart';
 import 'package:flutter_app/pages/home.dart';
 
 
-class Settings extends StatelessWidget {
-static String tag = 'HomePage';
+class SettingsPages extends StatelessWidget {
+static String tag = 'settings-pages';
 
   @override
   Widget build(BuildContext context){

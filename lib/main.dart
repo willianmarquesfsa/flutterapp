@@ -11,7 +11,7 @@ class ComprasApp extends StatelessWidget{
 final routes = <String, WidgetBuilder> {
   HomePage.tag: (context) => HomePage(),
   AboutPage.tag: (context) => AboutPage(),
-  Settings.tag: (contex) => Settings(),
+  SettingsPages.tag: (contex) => SettingsPages(),
 };
 //teste
 @override

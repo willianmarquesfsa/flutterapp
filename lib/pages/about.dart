@@ -4,7 +4,7 @@ import 'package:flutter_app/pages/home.dart';
 
 
 class AboutPage extends StatelessWidget {
-static String tag = 'HomePage';
+static String tag = 'About-pages';
 
   @override
   Widget build(BuildContext context){

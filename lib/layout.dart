@@ -9,7 +9,7 @@ class Layout {
   static final pages = [
     HomePage.tag,
     AboutPage.tag,
-    Settings.tag,
+    SettingsPages.tag,
   ];
 
   static int currItem = 1;
@@ -30,8 +30,9 @@ return Scaffold(appBar:AppBar(
                                      BottomNavigationBarItem(icon: Icon(Icons.settings), title: Text("Configurações")),
                                      ],
                                      onTap: (int i) {
-                                                     currItem = 1;
-                                                    Navigator.of(context).pushNamed(pages[i]);},
+                                                     currItem = i;
+                                                    Navigator.of(context).pushNamed(pages[i]);
+                                                    },
                                      
                 ),
                 body: content,
